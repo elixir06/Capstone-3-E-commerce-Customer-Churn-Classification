@@ -34,14 +34,17 @@ The objective are as followed :
 - Cost Reduction through predictive analysis by Eliminating Cashback for Predicted Churners
 
 
-Data cleaning done :
+### Data cleaning done :
+---
 - dropping duplicates (to prevent redundancy)
 - filling null values with median (since the data numerical data is not normally distributed)
 - keeping the outliers (so that the model will be more resilient to anomalies)
 
-Model Chosen : XGBoost Classifier
+### Model Chosen : XGBoost Classifier (F2 score after parameter tuning : 93.11%
+---
 
-From the result of confusion matrix in the test set, we can see that the model successfully predicted :
+
+From the result of confusion matrix in the test set (654), we can see that the model successfully predicted :
 - 525 True Negatives = The customers who were predicted to not churn and actually not churn
 - 23 False Negatives (type II error) = The customers who were predicted to not churn but actually churn
 - 22 False Positives (type I error) = The customers who were predicted to churn but actually not churn
