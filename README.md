@@ -40,16 +40,14 @@ The objective are as followed :
 - filling null values with median (since the data numerical data is not normally distributed)
 - keeping the outliers (so that the model will be more resilient to anomalies)
 
-### Model Chosen : XGBoost Classifier (F2 score after parameter tuning : 93.11%
+### Model Chosen : XGBoost Classifier (F2 score after parameter tuning : 93.11%)
 ---
 
 
-From the result of confusion matrix in the test set (654), we can see that the model successfully predicted :
+From the result of confusion matrix in the test set (654), the model successfully predicted :
 - 525 True Negatives = The customers who were predicted to not churn and actually not churn
 - 23 False Negatives (type II error) = The customers who were predicted to not churn but actually churn
 - 22 False Positives (type I error) = The customers who were predicted to churn but actually not churn
 - 84 True Positives = The customers who were predicted to churn and actually churn
 
 Cashback will not be given the False Positive group and True Positive group, since they are predicted to churn regardless they will churn or not. 
-
-The amount saved from cashback is totalling to 16461.69 Dollars
