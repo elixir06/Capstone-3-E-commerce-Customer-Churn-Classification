@@ -51,3 +51,6 @@ From the result of confusion matrix in the test set (654), the model successfull
 - 84 True Positives = The customers who were predicted to churn and actually churn
 
 Cashback will not be given the False Positive group and True Positive group, since they are predicted to churn regardless they will churn or not. 
+
+
+Video presentation and powerpoint link : https://drive.google.com/drive/u/0/folders/1R--BugGcy_FfbQF0v3KhkXqx4biiW4rK
